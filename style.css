@@ -4,6 +4,32 @@ body {
 	box-sizing: border-box;
 }
 
+/* 
+CSS para header
+*/
+
+header {
+	background-color: #2d334a;
+	color: #fff;
+	text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: #ffd803;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* 
+CSS para tabs de ejercicios
+*/
+
 .tab {
 	overflow: hidden;
 	border: 1px solid #ccc;
@@ -63,6 +89,7 @@ body {
 	padding: 10px;
 	text-align: center;
 	margin: 10px 0 10px 0px;
+	cursor: pointer;
 }
 
 .inner_tab_item {
@@ -88,4 +115,35 @@ body {
 
 .inner_tab_item img {
 	width: 50%;
+}
+
+/* 
+CSS para wrapper de lista de ejercicios y ejercicios seleccionados
+*/
+
+.section-wrapper {
+  display: flex;
+}
+
+.rutinas-ejercicios {
+  flex:2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ejercicios-elegidos {
+  flex:1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#lista-ejercicios {
+	list-style-type: none;
+	font-size: 1.5rem;
+	color: #2d334a;
+}
+
+#lista-ejercicios li {
+	cursor: pointer;
+	padding-bottom: 10px;
 }
