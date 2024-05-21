@@ -17,8 +17,7 @@
 			<h1>Fitness App</h1>
 			<nav>
 				<a href="#">Rutinas de Ejercicio</a>
-				<a href="#">Tu progreso</a>
-        <a href="#">Objeticos de entrenamiento</a>
+				<a href="#objetivos">Objetivos de Entrenamiento</a>
 			</nav>
 		</header>
 		<section class="section-wrapper">
@@ -923,9 +922,36 @@
 
 			<aside class="ejercicios-elegidos">
 				<header>Ejercicios Elegidos</header>
-        <ul id="lista-ejercicios"></ul>
+				<ul id="lista-ejercicios"></ul>
 			</aside>
 		</section>
-    <script src="script.js"></script>
+
+		<section id="objetivos">
+			<header>Objetivos de entrenamiento</header>
+			<section class="objetivos">
+				<h1>
+					Ingresa tus datos para poder calcular tus objetivos de entrenamiento
+				</h1>
+				<div class="inputs-resumen">
+          <div class="inputs-side">
+            <input type="text" id="nombre" required placeholder="Nombre" />
+            <input type="text" id="peso" required placeholder="Peso" />
+            <input type="text" id="edad" required placeholder="Edad" />
+            <input type="text" id="altura" required placeholder="Altura" />
+						<select name="sexo" id="sexo" required>
+							<option value="" disabled selected>Selecciona tu sexo</option>
+							<option value="masculino">Masculino</option>
+							<option value="femenino">Femenino</option>
+						</select>
+            <button onclick="calcular(nombre, )">Calcular</button>
+          </div>
+					<div class="resumen-side">
+						<header>Resumen</header>
+						<ul id="lista-resumen"></ul>
+					</div>
+				</div>
+			</section>
+		</section>
+		<script src="script.js"></script>
 	</body>
 </html>
